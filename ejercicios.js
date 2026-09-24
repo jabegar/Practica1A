@@ -95,9 +95,38 @@ else {
 //-----------------------------------------------------------------
 var dinero = 30;
 
-while(dinero != 0 && dinero != 120){
-    var apuesta = prompt('Cuanto dinero quieres apostar');
-    var numeroApostado = prompt('A que numero (1-6) quieres apostar');
+while(dinero != 0 && dinero <= 120){
+    var apuesta = parseInt(prompt(`Cuanto dinero quieres apostar (Tu dinero: ${dinero})`));
+    var numeroApostado = parseInt(prompt('A que numero (1-6) quieres apostar'));
 
-    // Math.random() * 5 + 1
+    var numGanador = Math.floor(Math.random() * 5 + 1);
+    
+    if(apuesta <= dinero) {
+        if (numeroApostado == 0) {
+            break;
+        }
+        
+        if (numeroApostado == numGanador){
+            dinero += apuesta + 10;
+            alert(`Ha salido ${numGanador}! Has ganado!`);
+        }
+        else {
+            dinero -= apuesta;
+            alert(`Ha salido ${numGanador}! Has perdido`);
+        }
+    }
+    else {
+        alert('No puedes apostar mas dinero del que tienes');
+    }
+}
+// -----------------------------------------------------------------
+// EJERCICIO 9
+// -----------------------------------------------------------------
+var nombres = prompt('Dame una lista de nombres separados por coma');
+nombres = nombres.split(',');
+
+for (let i = 0; i < nombres.length; i++) {
+    const nombre = nombres[i];
+    
+    document.write(`<p>Hola ${nombre}</p>`);
 }
