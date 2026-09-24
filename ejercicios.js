@@ -64,3 +64,29 @@ document.write(`<p>El precio final es ${precioDescuento}</p>`);
 //-----------------------------------------------------------------
 var tamano = prompt('Escribe un numero de nivel de encabezado');
 document.write(`<h${tamano}>Encabezado nivel ${tamano}</h${tamano}>`);
+//-----------------------------------------------------------------
+// EJERCICIO 7
+//-----------------------------------------------------------------
+var correcto = false;
+var intentosMaximos = 3;
+var intentoActual = intentosMaximos;
+
+var respuestaCorrecta = 'Velázquez';
+var respuestaUsuario;
+while(intentoActual > 0 && !correcto) {
+    respuestaUsuario = prompt('¿Quién es el pintor de las Meninas?');
+    console.log(respuestaCorrecta == respuestaUsuario)
+
+    if (respuestaCorrecta == respuestaUsuario) {
+        correcto = true;
+    }
+    else {
+        intentoActual--;
+    }
+}
+if (correcto) {
+    alert('Correcto! Ha acertado.');
+}
+else {
+    alert('Lo siento! La respuesta correcta es Velázquez');
+}
