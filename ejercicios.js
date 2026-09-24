@@ -21,7 +21,7 @@ else {
 var num1 = prompt('Inserte un numero');
 var num2 = prompt('Inserte otro numero');
 
-// alert(`La suma es: ${num1 + num2}\nLa resta es: ${num1 - num2}\nLa multiplicación es: ${num1 * num2}\nLa división es: ${num1 / num2}`);
+alert(`La suma es: ${num1 + num2}\nLa resta es: ${num1 - num2}\nLa multiplicación es: ${num1 * num2}\nLa división es: ${num1 / num2}`);
 //-----------------------------------------------------------------
 // EJERCICIO 4
 //-----------------------------------------------------------------
@@ -40,3 +40,6 @@ if (notaMedia >= 5) {
 else {
     document.write('<p>Vaya! Tendras que ir a recuperacion</p>');
 }
+//-----------------------------------------------------------------
+// EJERCICIO 5
+//-----------------------------------------------------------------
