@@ -90,3 +90,14 @@ if (correcto) {
 else {
     alert('Lo siento! La respuesta correcta es Velázquez');
 }
+//-----------------------------------------------------------------
+// EJERCICIO 8
+//-----------------------------------------------------------------
+var dinero = 30;
+
+while(dinero != 0 && dinero != 120){
+    var apuesta = prompt('Cuanto dinero quieres apostar');
+    var numeroApostado = prompt('A que numero (1-6) quieres apostar');
+
+    // Math.random() * 5 + 1
+}
