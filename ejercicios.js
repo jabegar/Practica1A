@@ -43,3 +43,18 @@ else {
 //-----------------------------------------------------------------
 // EJERCICIO 5
 //-----------------------------------------------------------------
+var marca = prompt('Escriba la marca del ordenador');
+var modelo = prompt('Escriba el modelo del ordenador');
+var descuento = 0;
+var precio = 1000;
+
+if (marca == 'MSI' && modelo == 'PRESTIGE') {
+    descuento = 5;
+}
+else if (marca == 'HP' && modelo == 'Pavilion') {
+    descuento = 10;
+}
+
+var precioDescuento = precio - (precio * descuento / 100);
+document.write(`<p>Tienes un descuento de ${descuento}%</p>`);
+document.write(`<p>El precio final es ${precioDescuento}</p>`);
