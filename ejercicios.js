@@ -120,7 +120,7 @@ while(dinero != 0 && dinero <= 120){
     }
 }
 // -----------------------------------------------------------------
-// EJERCICIO 9
+// EJERCICIO 9 y 10
 // -----------------------------------------------------------------
 var nombres = prompt('Dame una lista de nombres separados por coma');
 nombres = nombres.split(',');
@@ -130,3 +130,9 @@ for (let i = 0; i < nombres.length; i++) {
     
     document.write(`<p>Hola ${nombre}</p>`);
 }
+document.write(`<p>Hay un total de ${nombres.length} personas</p>`);
+document.write(`<p>La primera persona es ${nombres[0]}</p>`);
+document.write(`<p>La ultima persona es ${nombres[nombres.length - 1]}</p>`);
+
+console.log(nombres.sort());
+console.log(nombres.reverse());
